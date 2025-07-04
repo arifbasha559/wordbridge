@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 
-const Navbar = () => {
-    const [select1, setSelect1] = useState("English");
-    const [select2, setSelect2] = useState("Spanish");
+const Navbar = ({select1, setSelect1,select2, setSelect2}) => {
+    
 
     const swapLanguages = () => {
         setSelect1(select2);
@@ -23,10 +22,10 @@ const Navbar = () => {
                         onChange={(e) => setSelect1(e.target.value)}
                         className="focus:outline-none "
                         >
-                        <option value="English">English</option>
-                        <option value="Spanish">Spanish</option>
-                        <option value="French">French</option>
-                        <option value="German">German</option>
+                        <option className='bg-[#112137]' value="English">English</option>
+                        <option className='bg-[#112137]' value="Spanish">Spanish</option>
+                        <option className='bg-[#112137]' value="French">French</option>
+                        <option className='bg-[#112137]' value="German">German</option>
                     </select>
                         </div>
 
@@ -43,10 +42,10 @@ const Navbar = () => {
                         onChange={(e) => setSelect2(e.target.value)}
                         className=" focus:outline-none"
                         >
-                        <option value="English">English</option>
-                        <option value="Spanish">Spanish</option>
-                        <option value="French">French</option>
-                        <option value="German">German</option>
+                        <option className='bg-[#112137]' value="English">English</option>
+                        <option className='bg-[#112137]' value="Spanish">Spanish</option>
+                        <option className='bg-[#112137]' value="French">French</option>
+                        <option className='bg-[#112137]' value="German">German</option>
                     </select>
                         </div>
                 </div>
